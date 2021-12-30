@@ -21,7 +21,7 @@ Add the 'Site Alert' block to whichever layout you wish it to appear in. Ensure 
 Differences from Drupal 7
 -------------------------
 
-- Text formats added to content creation.
+- Text formats added to the block content field.
 
 Issues
 ------
