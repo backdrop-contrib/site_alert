@@ -5,9 +5,29 @@
  * Install, update, and uninstall functions for Site Alert.
  */
 
+
 /**
- * Empty update function to trigger cache clear.
+ * Migrate site_alert variables to config.
  */
-function site_alert_update_7000() {
-  // Do nothing.
+function site_alert_update_1000() {
+  $config = config('site_alert.settings');
+  $config->set('site_alert_timeout', update_variable_get('site_alert_timeout', 'SITE_ALERT_TIMEOUT_DEFAULT'));
+  $config->set('site_alert_start', update_variable_get('site_alert_start', ''));
+  $config->set('site_alert_expire', update_variable_get('site_alert_expire', ''));
+  $config->set('site_alert_severity', update_variable_get('site_alert_severity', ''));
+  $config->set('site_alert_content', update_variable_get('site_alert_content', ''));
+  $config->save();
+
+  update_variable_del('site_alert_timeout');
+  update_variable_del('site_alert_start');
+  update_variable_del('site_alert_expire');
+  update_variable_del('site_alert_severity');
+  update_variable_del('site_alert_content');
+}
+
+/**
+ * Implements hook_install().
+ */
+function site_alert_install() {
+  // Dynamically generated variable data was detected.
 }

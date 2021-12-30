@@ -27,8 +27,8 @@ $plugin = array(
  */
 function site_alert_page_content_type_render($subtype, $conf, $panel_args) {
 
-  drupal_add_js(drupal_get_path('module', 'site_alert') . '/site_alert.js');
-  drupal_add_js(array('siteAlert' => array('timeout' =>  variable_get('site_alert_timeout', SITE_ALERT_TIMEOUT_DEFAULT))), 'setting');
+  backdrop_add_js(backdrop_get_path('module', 'site_alert') . '/site_alert.js');
+  backdrop_add_js(array('siteAlert' => array('timeout' => config_get('site_alert.settings', 'site_alert_timeout'))), 'setting');
 
   $block = new stdClass();
   $block->content = array('#theme' => 'site_alert_wrapper');

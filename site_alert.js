@@ -8,7 +8,7 @@
 
 var basePath;
 
-  Drupal.behaviors.siteAlert = {
+  Backdrop.behaviors.siteAlert = {
     attach: function(context, settings) {
       basePath = settings.basePath;
       loadAlert($('.site-alert', context));
@@ -23,13 +23,13 @@ var basePath;
     // processing by our theme callback. Without it the default theme is always
     // assumed.
     var options = {
-      ajax_page_state: Drupal.settings.ajaxPageState
+      ajax_page_state: Backdrop.settings.ajaxPageState
     };
     siteAlert.load(callback, options);
 
     // Update content at configured interval.
-    if (Drupal.settings.siteAlert.timeout > 0) {
-      setTimeout(function() { loadAlert(siteAlert) }, Drupal.settings.siteAlert.timeout * 1000);
+    if (Backdrop.settings.siteAlert.timeout > 0) {
+      setTimeout(function() { loadAlert(siteAlert) }, Backdrop.settings.siteAlert.timeout * 1000);
     }
 
   }
