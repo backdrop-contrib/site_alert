@@ -15,7 +15,7 @@ Configuration
 
 Enable the Site Alert module
 Add the 'Site Alert' block to whichever layout you wish it to appear in. Ensure that all necessary roles have the 
-'administer site alerts' permission.  (All roles can view alerts)  Create an alert (admin/config/system/alerts)Enjoy your exciting new site alert!
+'administer site alerts' permission.  (All roles can view alerts)  Create an alert (admin/config/system/alerts) Enjoy your exciting new site alert!
 
 Differences from Drupal 7
 -------------------------
