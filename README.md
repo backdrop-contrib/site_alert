@@ -39,6 +39,7 @@ Credits <!-- This section is required. -->
 
 - Ported to Backdrop CMS by [Justin Keiser](https://github.com/keiserjb).
 - Maintained for Drupal by [Cecily Borzillo](https://www.drupal.org/u/cecrs).
+- Also inspired by [Boostrap Site Alert](https://www.drupal.org/project/bootstrap_site_alert).
 
 License
 -------
