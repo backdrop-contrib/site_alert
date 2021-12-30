@@ -137,11 +137,12 @@ function site_alert_admin() {
   $alert = $config->get('site_alert_content');
 
   $form['site_alert_content'] = array(
-    '#type' => 'text_format',
+    '#type' => 'textarea',
     '#description' => t('Allowed tags are a, strong, and em'),
     '#title' => 'Content',
     '#default_value' => $alert,
     '#required' => TRUE,
+    '#rows' => 2,
   );
 
   return system_settings_form($form, FALSE);

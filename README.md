@@ -20,7 +20,7 @@ Add the 'Site Alert' block to whichever layout you wish it to appear in. Ensure 
 Differences from Drupal 7
 -------------------------
 
-- WYSIWYG added for block content creation.
+- No changes.
 
 Issues
 ------
