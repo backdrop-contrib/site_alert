@@ -2,8 +2,7 @@ Site Alert
 ------------
 
 The Site Alert module is a lightweight solution for allowing site administrators to easily place an alert on their 
-site, for example for maintenance downtime, or any general informational message. Alerts have start and end 
-date/times,and can be assigned a severity level. Messages are refreshed by ajax and not subject to site caching, so changes made in the ui will be automatically displayed to users without necessitating a cache clear. 
+site, for example for maintenance downtime, or any general informational message. Alerts can be assigned a severity level. 
 
 Installation
 ------------
