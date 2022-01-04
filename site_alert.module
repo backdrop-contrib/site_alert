@@ -22,32 +22,6 @@ function site_alert_preprocess_block(&$variables) {
   }
 
 /**
- * Implements hook_config_info().
- */
-function site_alert_config_info() {
-  $prefixes['site_alert.settings'] = array(
-    'label' => t('Site Alert settings'),
-    'group' => t('Configuration'),
-  );
-  return $prefixes;
-}
-
-/**
- * Create a new permission to administer Site Alerts.
- *
- * This permission can be given to any role.
- */
-function site_alert_permission() {
-
-  return array(
-    'administer alerts settings' => array(
-      'title' => t('Administer alerts settings'),
-      'description' => t('Allow users to administer alerts settings'),
-    ),
-  );
-}
-
-/**
  * Implements hook_block_info().
  */
 function site_alert_block_info() {

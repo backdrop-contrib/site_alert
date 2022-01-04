@@ -5,5 +5,4 @@ type = module
 
 stylesheets[all][] = css/site-alert.css
 
-configure = admin/config/system/alerts
 
