@@ -1,8 +1,7 @@
 Site Alert
 ------------
 
-The Site Alert module is a lightweight solution for allowing site administrators to easily place an alert on their 
-site, for example for maintenance downtime, or any general informational message. Alerts can be assigned a severity level. 
+The Site Alert module is a lightweight solution for allowing site administrators to easily place an alert on their site, for example for maintenance downtime, or any general informational message. Alerts can be assigned a severity level. 
 
 Installation
 ------------
