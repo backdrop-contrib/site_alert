@@ -1,7 +1,9 @@
 Site Alert
 ------------
 
-The Site Alert module is a lightweight solution for allowing site administrators to easily place an alert on their site, for example for maintenance downtime, or any generalinformational message. Alerts have start and end date/times,and can be assigned a severity level. Messages are refreshed by ajax and not subject to site caching, so changes made in the ui will be automatically displayed to users withoutnecessitating a cache clear. 
+The Site Alert module is a lightweight solution for allowing site administrators to easily place an alert on their 
+site, for example for maintenance downtime, or any general informational message. Alerts have start and end 
+date/times,and can be assigned a severity level. Messages are refreshed by ajax and not subject to site caching, so changes made in the ui will be automatically displayed to users without necessitating a cache clear. 
 
 Installation
 ------------
@@ -14,13 +16,17 @@ Configuration
 ----------------
 
 Enable the Site Alert module
-Add the 'Site Alert' block to whichever layout you wish it to appear in. Ensure that all necessary roles have the 
-'administer site alerts' permission.  (All roles can view alerts)  Create an alert (admin/config/system/alerts) Enjoy your exciting new site alert!
+Add the 'Site Alert' block to whichever layout you wish it to appear in. 
 
 Differences from Drupal 7
 -------------------------
 
-- No changes.
+Module modifications for Backdrop.
+
+- The scheduling capability was removed. To regain this functionality consider using the
+  [Block Scheduler](https://backdropcms.org/project/block_scheduler) module.
+- WYSIWYG added for block content creation.
+- Block configuration moved to the layout screen so content creation and placement are done in one step.
 
 Issues
 ------
@@ -37,7 +43,7 @@ Credits <!-- This section is required. -->
 -------
 
 - Ported to Backdrop CMS by [Justin Keiser](https://github.com/keiserjb).
-- Maintained for Drupal by [Cecily Borzillo](https://www.drupal.org/u/cecrs).
+- Created for Drupal by [Cecily Borzillo](https://github.com/cecrs).
 - Also inspired by [Boostrap Site Alert](https://www.drupal.org/project/bootstrap_site_alert).
 
 License

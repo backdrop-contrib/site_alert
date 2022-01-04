@@ -1,8 +1,0 @@
-{
-    "_config_name": "site_alert.settings",
-    "site_alert_timeout": "SITE_ALERT_TIMEOUT_DEFAULT",
-    "site_alert_start": "",
-    "site_alert_expire": "",
-    "site_alert_severity": "",
-    "site_alert_content": ""
-}
