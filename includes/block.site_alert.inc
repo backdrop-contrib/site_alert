@@ -14,7 +14,7 @@ class BlockSiteAlert extends BlockText {
     parent::__construct($plugin_name, $data);
 
     $this->settings += [
-      'severity' => '',
+      'sitealert' => '',
     ];
   }
 
@@ -63,7 +63,8 @@ class BlockSiteAlert extends BlockText {
       '#title'         => t('Severity'),
       '#options'       => array(
         'info' => t('Informational Only - Default Blue'),
-        'low'  => t('Low Severity - Default Yellow'),
+        'low'  => t('Low Severity - Default Green'),
+        'medium'  => t('Medium Severity - Default Yellow'),
         'high' => t('High Severity - Default Red'),
       ),
       '#default_value' => $this->settings['severity'],

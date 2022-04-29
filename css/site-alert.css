@@ -20,6 +20,16 @@ div.site-alert div.info {
 }
 
 div.site-alert div.low {
+  background: #198754;
+  border: 1px solid #faebcc;
+  color: #f1f1f1;
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-position: 1% 50%;
+  margin-bottom: 1.5em;
+}
+
+div.site-alert div.medium {
   background: #f3eaac;
   border: 1px solid #faebcc;
   color: #8a6d3b;

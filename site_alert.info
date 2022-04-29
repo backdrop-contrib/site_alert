@@ -1,8 +1,7 @@
 name = Site Alert
-description = Simple module to display text alert site wide.
+description = Simple module to display text alert site wide with an expiration date.
 backdrop = 1.x
 type = module
 
 stylesheets[all][] = css/site-alert.css
-
 
